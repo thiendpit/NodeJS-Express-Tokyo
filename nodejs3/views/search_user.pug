@@ -1,0 +1,10 @@
+extends layout
+block content
+    h1 Search User
+    form(action="/search_user", method="GET")
+        input(type="text", name="name")
+        button(type="submit") Search 
+    
+    ul 
+        each user in users
+            li= user.name
