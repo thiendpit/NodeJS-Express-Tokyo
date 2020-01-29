@@ -1,2 +1,6 @@
-h1 THIEN KUTE 
-a(href="/users") Users
+extends layout
+block content
+    h1 #{usersList}
+    ul
+        each user in users
+            li= user.name
