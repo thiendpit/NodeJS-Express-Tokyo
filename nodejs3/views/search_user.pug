@@ -1,6 +1,9 @@
 extends layout
 block content
     h1 Search User
+    a(href="/") Home
+    br
+    br
     form(action="/search_user", method="GET")
         input(type="text", name="name")
         button(type="submit") Search 

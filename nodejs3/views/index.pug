@@ -1,6 +1,15 @@
 extends layout
 block content
     h1 Users List
-    ul
+    a(href="/search_user") Search
+    br
+    a(href="/create_user") Create
+    br
+    ul List
         each user in users
-            li= user.name
+            li
+                span= user.name
+                span &nbsp;
+                a(href='/' + user.id) View
+            
+        
